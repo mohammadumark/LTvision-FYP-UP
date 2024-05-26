@@ -1,0 +1,154 @@
+/* src/FileUpload.css */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .upload-section, .scan-section {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .upload-section {
+    border-right: 1px solid #ccc;
+  }
+  
+  .upload-section h3 {
+    margin: 0;
+  }
+  
+  .link {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .upload-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .drop-area {
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .choose-file-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .scan-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .doc-icon, .check-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .home-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+  }
+  
+  /* Inner Container */
+  .inner-container {
+    background-color: rgb(255, 255, 255);
+    height: 86vh;
+    width: 85%;
+    border-radius: 26px;
+    margin-top: 39px;
+    margin-left: 12px;
+    margin-right: 12px;
+    overflow: hidden;
+  }
+  
+  /* Navigation Container */
+  .navigation-container {
+    width: 30vh;
+    background: var(--nav-color);
+    padding: 60px;
+    overflow-y: auto;
+  }
+  
+  .nav-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    height: 33px;
+    color: white;
+    font-size: 20px;
+    padding: 8px 12px; /* Add padding to give some space around the text */
+  }
+  
+  .nav-option:hover,
+  .selected {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    width: max-content;
+  }
+  
+  .nav-option:hover .nav-icon,
+  .selected .nav-icon {
+    filter: invert(100%);
+  }
+  
+  .nav-icon,
+  .nav-icon-dash {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+    fill: white;
+  }
+  
+  .nav-icon-dash {
+    filter: invert(100%);
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    overflow-y: auto;
+    overflow-x: hidden;}
+  
+  .scan-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
