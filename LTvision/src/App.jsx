@@ -7,11 +7,12 @@ import MyProfile from './components/MyProfile';
 import Appointments from './components/Appointments';
 import Patients from './components/Patients';
 import Chats from './components/Chats';
-import Alerts from './components/Alerts';
+import Alerts from './components/FileUpload';
 import Signup from './components/Signup';
 import Login from './components/Login';
 import PatientProfile from './components/PatientProfile';
 import ForgotPassword from './components/ForgotPassword';
+import FileUpload from './components/FileUpload';
 
 function App() {
   useEffect(() => {
@@ -30,7 +31,7 @@ function App() {
         <Route path="/patients" element={<Patients />} />
         <Route path="/patients/profile/:id" element={<PatientProfile />} />
         <Route path="/chats" element={<Chats />} />
-        <Route path="/alerts" element={<Alerts />} />
+        <Route path="/alerts" element={<FileUpload />} />
         <Route path="/login" element={<Login />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/register" element={<Signup />} />

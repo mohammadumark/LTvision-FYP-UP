@@ -1,74 +1,67 @@
 /* src/FileUpload.css */
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .upload-section, .scan-section {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .upload-section {
-    border-right: 1px solid #ccc;
-  }
-  
-  .upload-section h3 {
-    margin: 0;
-  }
-  
-  .link {
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  
-  .upload-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
-  
-  .drop-area {
-    border: 2px dashed #007bff;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .choose-file-button {
-    display: inline-block;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .scan-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .doc-icon, .check-icon {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
-  }
-  .home-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: aliceblue;
+  padding: 20px;
+}
+
+.upload-section {
+  margin-top: 39px;
+  background-color: aliceblue;
+  height: 90%;
+  width: 50%; /* Adjusted to take 70% width */
+  padding: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #ccc; /* Moved border here */
+}
+
+.scan-section {
+  margin-top: 39px;
+  background-color: aliceblue;
+  height: 90%;
+  width: 50%; /* Adjusted to take 70% width */
+  box-sizing: border-box;
+}
+
+.upload-section h3 {
+  margin: 0;
+}
+
+.link {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.upload-button, .choose-file-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.drop-area {
+  border: 2px dashed #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.doc-icon, .check-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+  .home-container-up {
+    background-color: var(--primary-color);
     display: flex;
     height: 100vh;
     width: 100vw;
@@ -76,17 +69,6 @@
     margin: 0;
   }
   
-  /* Inner Container */
-  .inner-container {
-    background-color: rgb(255, 255, 255);
-    height: 86vh;
-    width: 85%;
-    border-radius: 26px;
-    margin-top: 39px;
-    margin-left: 12px;
-    margin-right: 12px;
-    overflow: hidden;
-  }
   
   /* Navigation Container */
   .navigation-container {
@@ -133,12 +115,12 @@
   }
   
   /* Main Content */
-  .main-content {
+  .main-content-up {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color);
+    background-color: var(--nav-color);
     overflow-y: auto;
     overflow-x: hidden;}
   

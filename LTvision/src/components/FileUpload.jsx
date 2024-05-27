@@ -39,10 +39,10 @@ const FileUpload = () => {
   };
 
   return (
-    <div className="home-container">
+    <div className="home-container-up">
       <Navigation selectedOption={selectedOption} handleOptionClick={handleOptionClick} />
-      <div className="main-content">
-        <div className="inner-container">
+      <div className="main-content-up">
+      
         <div className="container">
       <div className="upload-section">
         <h3>Upload Ct Scan</h3>
@@ -61,12 +61,12 @@ const FileUpload = () => {
         </div>
       </div>
       <div className="scan-section">
-        <img src="doc-icon.png" alt="Document" className="doc-icon" />
-        <img src="check-icon.png" alt="Check" className="check-icon" />
+        <img src=".\src\assets\doc-icon.png" alt="Document" className="doc-icon" />
+        <img src=".\src\assets\check-icon.png" alt="Check" className="check-icon" />
         <button className="scan-button">Scan For Tumor</button>
       </div>
     </div>
-        </div>
+        
       </div>
       <Navbar />
     </div>
